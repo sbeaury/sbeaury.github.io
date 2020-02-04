@@ -7,7 +7,11 @@
 
     <title>Sebastien Beaury | Dev</title>
 
-	<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+    <link
+      href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII="
+      rel="icon"
+      type="image/x-icon"
+    />
 
     <link
       href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300"
@@ -19,25 +23,41 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
-	<link rel="stylesheet" href="css/indigo-white.css" />
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154687207-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="stylesheet" href="css/indigo-white.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@5/dist/backdrop.css"
+    />
 
-  gtag('config', 'UA-154687207-1');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-154687207-1"
+    ></script>
 
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-154687207-1");
+    </script>
   </head>
   <body>
     <main>
       <div class="intro">Hi, I'm Sébastien!</div>
-      <div class="tagline">Junior Full Stack Developer from <span><img class="cn-tower"
-		src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDE5LjkzMiAxOS45MzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE5LjkzMiAxOS45MzI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxwYXRoIGQ9Ik0xMS45NjUsMTIuMDM2bC0wLjE5Mi0wLjU1M2gwLjA4MXYtMC42MDloLTAuODM2VjEwLjMzaC0wLjM5NFY5LjUxN2gtMC4yNDZ2LTIuMzRoMC4wNzEgICBjMC4xNzUsMCwwLjMxOS0wLjE0NywwLjMxOS0wLjMyNFY2LjcxMWMwLTAuMTc2LTAuMTQ2LTAuMzItMC4zMTktMC4zMmgtMC4xMzNWNC4wODhoLTAuMTA0VjIuNjgxaC0wLjEwMlYxLjM0N2gtMC4wNDJWMEg5Ljg2MSAgIHYxLjM0OEg5LjgxOXYxLjMzNEg5LjcxN3YxLjQwNkg5LjYxM3YyLjMwM0g5LjQ3N2MtMC4xNzYsMC0wLjMyLDAuMTQ2LTAuMzIsMC4zMnYwLjE0M2MwLDAuMTc3LDAuMTQ2LDAuMzI0LDAuMzIsMC4zMjRoMC4wNzF2Mi4zNCAgIEg5LjMwMnYwLjgxMkg4LjkzdjAuNTQ0SDguMTg2djAuNjA5aDAuMDUzbC0wLjEyNiwwLjU1M0g3LjUxNnYxLjIwNWgwLjAyOGwwLjIyOCwwLjQwNmgwLjA2N2MtMC4xMjEsMC4wODgtMC4xOTcsMC4yMy0wLjE5NywwLjM5MSAgIHYwLjA5YzAsMC4yNjgsMC4yMTQsMC40ODIsMC40NzEsMC40ODJoMC45MjFjLTAuMDA0LDEuNzI1LTAuMDUxLDEuNDI2LTAuMjI5LDUuMzIyaDIuMzIzYy0wLjE3OS0zLjg5Ni0wLjIyNy0zLjU5OC0wLjIzMS01LjMyMiAgIGgwLjk5NGMwLjI2LDAsMC40NzItMC4yMTUsMC40NzItMC40ODJ2LTAuMDljMC0wLjE2LTAuMDc5LTAuMzA1LTAuMTk5LTAuMzkzbDAuMjI0LTAuNDA0aDAuMDI5di0xLjIwNUgxMS45NjV6IE05LjEwOSwxMC41NzcgICBoMS43MTJ2MC4yNzNIOS4xMDlWMTAuNTc3eiBNMTEuNzY3LDEyLjAxNWgtMy40NlYxMS42NGgzLjQ2VjEyLjAxNXoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
-		alt=""		  
-	  ></img></span></div>
+      <div class="tagline">
+        Junior Full Stack Developer from
+        <span
+          ><img
+            class="cn-tower"
+            id="cn-tower"
+            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDE5LjkzMiAxOS45MzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE5LjkzMiAxOS45MzI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxwYXRoIGQ9Ik0xMS45NjUsMTIuMDM2bC0wLjE5Mi0wLjU1M2gwLjA4MXYtMC42MDloLTAuODM2VjEwLjMzaC0wLjM5NFY5LjUxN2gtMC4yNDZ2LTIuMzRoMC4wNzEgICBjMC4xNzUsMCwwLjMxOS0wLjE0NywwLjMxOS0wLjMyNFY2LjcxMWMwLTAuMTc2LTAuMTQ2LTAuMzItMC4zMTktMC4zMmgtMC4xMzNWNC4wODhoLTAuMTA0VjIuNjgxaC0wLjEwMlYxLjM0N2gtMC4wNDJWMEg5Ljg2MSAgIHYxLjM0OEg5LjgxOXYxLjMzNEg5LjcxN3YxLjQwNkg5LjYxM3YyLjMwM0g5LjQ3N2MtMC4xNzYsMC0wLjMyLDAuMTQ2LTAuMzIsMC4zMnYwLjE0M2MwLDAuMTc3LDAuMTQ2LDAuMzI0LDAuMzIsMC4zMjRoMC4wNzF2Mi4zNCAgIEg5LjMwMnYwLjgxMkg4LjkzdjAuNTQ0SDguMTg2djAuNjA5aDAuMDUzbC0wLjEyNiwwLjU1M0g3LjUxNnYxLjIwNWgwLjAyOGwwLjIyOCwwLjQwNmgwLjA2N2MtMC4xMjEsMC4wODgtMC4xOTcsMC4yMy0wLjE5NywwLjM5MSAgIHYwLjA5YzAsMC4yNjgsMC4yMTQsMC40ODIsMC40NzEsMC40ODJoMC45MjFjLTAuMDA0LDEuNzI1LTAuMDUxLDEuNDI2LTAuMjI5LDUuMzIyaDIuMzIzYy0wLjE3OS0zLjg5Ni0wLjIyNy0zLjU5OC0wLjIzMS01LjMyMiAgIGgwLjk5NGMwLjI2LDAsMC40NzItMC4yMTUsMC40NzItMC40ODJ2LTAuMDljMC0wLjE2LTAuMDc5LTAuMzA1LTAuMTk5LTAuMzkzbDAuMjI0LTAuNDA0aDAuMDI5di0xLjIwNUgxMS45NjV6IE05LjEwOSwxMC41NzcgICBoMS43MTJ2MC4yNzNIOS4xMDlWMTAuNTc3eiBNMTEuNzY3LDEyLjAxNWgtMy40NlYxMS42NGgzLjQ2VjEyLjAxNXoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+            alt=""
+        /></span>
+      </div>
       <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
       <div class="icons-social">
         <a target="_blank" href="https://github.com/sbeaury"
@@ -48,5 +68,12 @@
         ></a>
       </div>
     </main>
+    <!-- Tooltip script -->
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
+    <script>
+      tippy(".cn-tower", { content: "Toronto", placement: "bottom" });
+    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>

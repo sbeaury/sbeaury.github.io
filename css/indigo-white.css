@@ -1,0 +1,33 @@
+/* Theme */
+
+main {
+  background: #303f9f;
+  color: #fafafa;
+}
+
+.icons-social a {
+  color: #fafafa;
+}
+
+a {
+  display: inline-block;
+}
+
+a:hover {
+  cursor: pointer;
+  animation: bounce 0.5s;
+}
+
+.icons-social a svg path {
+  fill: #fafafa;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

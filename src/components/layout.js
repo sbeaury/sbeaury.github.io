@@ -1,0 +1,80 @@
+import React from "react";
+import PropTypes from "prop-types";
+import Header from "./header";
+import { ScrollingProvider } from "react-scroll-section";
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+
+  *,
+  *::after,
+  *::before { 
+    box-sizing: inherit;
+    }
+
+  body {
+    box-sizing: border-box; 
+    margin: 0;
+    font-display: swap;
+    font-display: fallback;
+    overflow-x: hidden;
+    font-family: Roboto, sans-serif;
+    background: #d7f2ef;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 0 10px;
+    }
+    
+    @media (min-width: 768px) {
+      html {
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      html {
+        font-size: 18px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      html {
+        font-size: 20px;
+      }
+    }
+  
+`;
+
+const Layout = ({ children }) => {
+  return (
+    <>
+      <GlobalStyle />
+      <ScrollingProvider>
+        <Header />
+        <div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 960,
+            padding: `0 1.0875rem 1.45rem`
+          }}
+        >
+          <main>{children}</main>
+          <footer>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </footer>
+        </div>
+      </ScrollingProvider>
+    </>
+  );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired
+};
+
+export default Layout;

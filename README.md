@@ -2,9 +2,8 @@
 
 Portfolio https://sbeaury.github.io/
 
-<h1 align="center">
-  sbeaury.github.io - v1
-</h1>
+`master` branch has the deploy files. The source code is in `dev` branch [here](https://github.com/flexdinesh/flexdinesh.github.io/tree/dev).
+
 <p align="center">
   Built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
 </p>

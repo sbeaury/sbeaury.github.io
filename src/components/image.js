@@ -9,7 +9,6 @@ const GatsbyImage = styled(Img)`
     ${props => `${[0, 1, 0, 1, 0, 1, 0][props.index] * -30}px`}
   );
   margin: 0.5rem;
-
   @media (max-width: 375px) {
     margin: 1rem;
   }

@@ -15,8 +15,8 @@ const MenuContainer = styled.div`
 const Header = () => (
   <HeaderContainer>
     <MenuContainer>
+      <MenuItem section="blog">Blog</MenuItem>
       <MenuItem section="portfolio">Portfolio</MenuItem>
-      <MenuItem section="about">Writing</MenuItem>
       <MenuItem section="about">About</MenuItem>
     </MenuContainer>
   </HeaderContainer>

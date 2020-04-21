@@ -8,7 +8,6 @@ const SectionContainer = styled.div`
   min-width: 320px;
   max-width: 1366px;
   display: flex;
-  margin: auto;
   flex: 0 1 auto;
   flex-direction: column;
   justify-content: center;

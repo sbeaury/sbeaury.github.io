@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "../components/section";
 import styled from "styled-components";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaDev } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import "react-tippy/dist/tippy.css";
 import { Tooltip } from "react-tippy";
@@ -26,11 +26,12 @@ const Tagline = styled.div`
   font-size: 1.5rem;
   margin: 1.5rem 0;
   font-weight: 100;
+  color: rgba(0, 0, 0, 0.6);
 `;
 
 const CnTower = styled.img`
   width: 10%;
-  filter: invert(100%);
+  filter: invert(0.5);
   @media (max-width: 375px) {
     width: 20%;
   }
@@ -38,7 +39,7 @@ const CnTower = styled.img`
 
 const Link = styled.a`
   display: inline-block;
-  color: #ffffff;
+  color: #111;
   font-size: 2em;
   padding: 0 0.2rem 0 0.2rem;
   margin: 0.5rem;
@@ -70,11 +71,18 @@ const Landing = () => (
         </Tooltip>
       </Tagline>
 
-      <Link target="_blank" href="https://www.linkedin.com/in/sbeaury">
+      <Link
+        target="_blank"
+        href="https://www.linkedin.com/in/sbeaury"
+        rel="noreferrer"
+      >
         <FaLinkedin />
       </Link>
-      <Link target="_blank" href="https://github.com/sbeaury">
+      <Link target="_blank" href="https://github.com/sbeaury" rel="noreferrer">
         <FaGithub />
+      </Link>
+      <Link target="_blank" href="https://dev.to/sbeaury" rel="noreferrer">
+        <FaDev />
       </Link>
       <Link target="_blank" href="mailto:sbeaury@gmail.com">
         <MdEmail />

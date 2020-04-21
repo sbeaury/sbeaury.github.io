@@ -10,7 +10,7 @@ const IconLink = styled.a`
   transition: color 0.5s;
   text-decoration: none;
   padding: 0.5rem;
-  color:#ffffff;
+  color:#111;
 
   &:hover{
     transform: scale(1.02);

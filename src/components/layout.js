@@ -19,8 +19,7 @@ const GlobalStyle = createGlobalStyle`
     font-display: fallback;
     overflow-x: hidden;
     font-family: Roboto, sans-serif;
-    background: rgba(55, 72, 80, 0.8);
-    color: #ffffff;
+    color: #111;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a {
-      color:#ffffff;
+      color:#111;
     }
     
     @media (min-width: 768px) {

@@ -24,7 +24,8 @@ const Intro = styled.div`
 
 const Tagline = styled.div`
   font-size: 1.5rem;
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
   font-weight: 100;
   color: rgba(0, 0, 0, 0.6);
 `;

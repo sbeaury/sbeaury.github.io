@@ -28,9 +28,9 @@ const Link = styled.a`
 const Header = () => (
   <HeaderContainer>
     <MenuContainer>
-      <Link href="https://sbeaury.github.io/resume" target="_blank">
+      {/* <Link href="" target="_blank">
         Resume
-      </Link>
+      </Link> */}
       <MenuItem section="blog">Blog</MenuItem>
       <MenuItem section="portfolio">Portfolio</MenuItem>
       <MenuItem section="about">About</MenuItem>

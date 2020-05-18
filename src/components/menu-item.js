@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { SectionLink } from "react-scroll-section";
 
 const NavItem = styled.span`
-  textdecoration: none;
-  texttransform: capitalize;
+  text-decoration: none;
+  text-transform: capitalize;
   display: inline;
   float: right;
   margin: 1rem 1rem 1rem 1rem;
@@ -18,7 +18,7 @@ const NavItem = styled.span`
 
 const MenuItem = ({ section, children }) => (
   <SectionLink section={section}>
-    {link => (
+    {(link) => (
       <NavItem onClick={link.onClick} selected={link.isSelected}>
         {children}
       </NavItem>
@@ -28,7 +28,7 @@ const MenuItem = ({ section, children }) => (
 
 MenuItem.propTypes = {
   section: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export { MenuItem };

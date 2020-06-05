@@ -22,26 +22,21 @@ const Blog = () => {
   useEffect(() => {
     axios
       .get("https://dev.to/api/articles?username=sbeaury")
-      .then(results => {
-        const resultArray = [];
-        resultArray.push(results.data[0]);
-        setArticles(resultArray);
-      })
-      .then(() => {
-        console.log("articles:", articles);
+      .then((results) => {
+        setArticles(results.data.reverse());
       });
   }, []);
 
   return (
     <Section.Container id="blog">
       <Title>Blog</Title>
-      {articles.map(article => (
+      {articles.map((article) => (
         <Article key={article.id}>
           <ArticleLink href={article.url} target="_blank" rel="noopener">
             <h3>{article.title}</h3>
           </ArticleLink>
           <small>
-            <Moment format="MMMM, DD YYYY">{Date(article.created_at)}</Moment>
+            <Moment format="MMMM, DD YYYY">{article.created_at}</Moment>
           </small>
           <p>{article.description}</p>
         </Article>

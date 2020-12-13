@@ -2,8 +2,6 @@
 
 Portfolio https://sbeaury.github.io/
 
-`main` branch has the deploy files. The source code is in `dev` branch [here](https://github.com/sbeaury/sbeaury.github.io/tree/dev).
-
 Built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
 
 ## Installation & Set-Up

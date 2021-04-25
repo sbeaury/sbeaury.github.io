@@ -26,6 +26,7 @@ const Portfolio = () => {
               description
               url
               repo
+              project
             }
             excerpt
           }
@@ -45,6 +46,7 @@ const Portfolio = () => {
             description={node.frontmatter.description}
             repo={node.frontmatter.repo}
             url={node.frontmatter.url}
+            tag={node.frontmatter.tag}
           />
         ))}
       </CardContainer>

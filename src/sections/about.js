@@ -40,7 +40,7 @@ const About = () => (
     </p>
     <p>Technologies I'm currently using or exploring:</p>
     <Container>
-      <Image />
+      <Image source="techImages" />
     </Container>
   </Section>
 )

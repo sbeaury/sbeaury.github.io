@@ -10,7 +10,7 @@ const GatsbyImage = styled(Img)`
   }
 `
 
-const Image = () => {
+const Image = ({ source, project }) => {
   const data = useStaticQuery(graphql`
     query {
       techImages: allFile(filter: { relativeDirectory: { eq: "tech" } }) {
@@ -24,12 +24,30 @@ const Image = () => {
           }
         }
       }
+
+      portfolioImages: allFile(
+        filter: { relativeDirectory: { eq: "portfolio" } }
+      ) {
+        edges {
+          node {
+            childImageSharp {
+              fluid(maxWidth: 300) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
     }
   `)
 
-  return data.techImages.edges.map((elt, index) => (
-    <GatsbyImage fluid={elt.node.childImageSharp.fluid} index={index} />
-  ))
+  return data[source].edges.map((elt, index) => {
+    if (elt.node.childImageSharp) {
+      return (
+        <GatsbyImage fluid={elt.node.childImageSharp.fluid} index={index} />
+      )
+    }
+  })
 }
 
 export default Image

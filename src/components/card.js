@@ -1,16 +1,15 @@
 import React from "react"
 import { default as Link } from "./SocialLink"
+import Image from "./Image"
 import styled from "styled-components"
 
 const CardItem = styled.div`
   display: flex;
   flex-direction: column;
-  width: 12rem;
+  width: 80%;
   min-height: 10rem;
   margin: 0.2rem;
-  border-style:solid;
-  border-color: #3dc0b0;
-  border-radius: 2px;
+ 
 
   &:hover {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -41,15 +40,18 @@ const LinkWrapper = styled.div`
   justify-content: center;
 `
 
-const Card = ({ title, description, repo, url }) => (
-  <CardItem>
-    <h1>{title}</h1>
-    <p>{description}</p>
-    <LinkWrapper>
-      <Link repo={repo} name={"Check repository"} />
-      <Link url={url} name={"Visit website"} />
-    </LinkWrapper>
-  </CardItem>
+const Card = ({ title, description, repo, url, project }) => (
+  <div>
+    <CardItem>
+      <h1>{title}</h1>
+      <p>{description}</p>
+      <LinkWrapper>
+        <Link repo={repo} name={"Check repository"} />
+        <Link url={url} name={"Visit website"} />
+      </LinkWrapper>
+    </CardItem>
+    <Image source="portfolioImages" project={project} />
+  </div>
 )
 
 export default Card

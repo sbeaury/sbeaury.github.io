@@ -34,7 +34,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Sébastien Beaury | Portfolio`,
         short_name: `starter`,
         start_url: `/`,
         theme_color: `#111`,

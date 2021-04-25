@@ -1,8 +1,8 @@
-import React from "react";
-import Section from "../components/section";
-import Image from "../components/image";
-import styled from "styled-components";
-import Title from "../components/title";
+import React from "react"
+import Section from "../components/Section"
+import Image from "../components/Image"
+import styled from "styled-components"
+import Title from "../styles/Title"
 
 const Container = styled.div`
   display: flex;
@@ -20,10 +20,10 @@ const Container = styled.div`
     flex-wrap: wrap;
     margin-top: 1rem;
   }
-`;
+`
 
 const About = () => (
-  <Section.Container id="about">
+  <Section id="about">
     <Title>About</Title>
     <p>
       I write{" "}
@@ -36,7 +36,7 @@ const About = () => (
     <Container>
       <Image />
     </Container>
-  </Section.Container>
-);
+  </Section>
+)
 
-export default About;
+export default About

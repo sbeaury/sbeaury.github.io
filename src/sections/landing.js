@@ -1,17 +1,30 @@
-import React from "react";
-import Section from "../components/section";
-import styled from "styled-components";
-import { FaLinkedin, FaGithub, FaDev } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import "react-tippy/dist/tippy.css";
-import { Tooltip } from "react-tippy";
+import React from "react"
+import styled from "styled-components"
+import { FaLinkedin, FaGithub, FaDev } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
+import "react-tippy/dist/tippy.css"
+import { Tooltip } from "react-tippy"
+import Section from "../components/Section"
+import background from "../images/background.jpg"
+
+const BackgroundImg = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(${background});
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+`
 
 const Main = styled.main`
   min-height: 100vh;
   justify-content: center;
   padding: 0 30px;
   text-align: center;
-`;
+`
 
 const Intro = styled.div`
   font-family: "Catamaran", sans-serif;
@@ -20,7 +33,7 @@ const Intro = styled.div`
   @media (max-width: 375px) {
     font-size: 50px;
   }
-`;
+`
 
 const Tagline = styled.div`
   font-size: 1.5rem;
@@ -28,7 +41,7 @@ const Tagline = styled.div`
   margin-bottom: 2.5rem;
   font-weight: 100;
   color: rgba(0, 0, 0, 0.6);
-`;
+`
 
 const CnTower = styled.img`
   width: 10%;
@@ -36,7 +49,7 @@ const CnTower = styled.img`
   @media (max-width: 375px) {
     width: 20%;
   }
-`;
+`
 
 const Link = styled.a`
   display: inline-block;
@@ -51,10 +64,11 @@ const Link = styled.a`
   }
 
   }
-`;
+`
 
 const Landing = () => (
-  <Section.Container id="home">
+  <Section id="home">
+    <BackgroundImg />
     <Main>
       <Intro>Hi, I'm Sébastien!</Intro>
       <Tagline>
@@ -89,7 +103,7 @@ const Landing = () => (
         <MdEmail />
       </Link>
     </Main>
-  </Section.Container>
-);
+  </Section>
+)
 
-export default Landing;
+export default Landing

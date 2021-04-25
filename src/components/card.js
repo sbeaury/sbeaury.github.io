@@ -1,6 +1,6 @@
-import React from "react";
-import { default as Link } from "./social-link";
-import styled from "styled-components";
+import React from "react"
+import { default as Link } from "./SocialLink"
+import styled from "styled-components"
 
 const CardItem = styled.div`
   display: flex;
@@ -33,13 +33,13 @@ const CardItem = styled.div`
   }
 }
 
-`;
+`
 
 const LinkWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-`;
+`
 
 const Card = ({ title, description, repo, url }) => (
   <CardItem>
@@ -50,6 +50,6 @@ const Card = ({ title, description, repo, url }) => (
       <Link url={url} name={"Visit website"} />
     </LinkWrapper>
   </CardItem>
-);
+)
 
-export default Card;
+export default Card

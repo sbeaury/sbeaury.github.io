@@ -1,8 +1,7 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
-import styled from "styled-components";
-import { Shake } from "reshake";
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import styled from "styled-components"
 
 const GatsbyImage = styled(Img)`
   transform: translateY(
@@ -12,7 +11,7 @@ const GatsbyImage = styled(Img)`
   @media (max-width: 375px) {
     margin: 1rem;
   }
-`;
+`
 
 const Image = () => {
   const data = useStaticQuery(graphql`
@@ -29,23 +28,11 @@ const Image = () => {
         }
       }
     }
-  `);
+  `)
 
   return data.techImages.edges.map((elt, index) => (
-    <Shake
-      h={1}
-      v={0}
-      r={0}
-      dur={450}
-      int={10}
-      max={100}
-      fixed={true}
-      fixedStop={false}
-      freez={true}
-    >
-      <GatsbyImage fluid={elt.node.childImageSharp.fluid} index={index} />
-    </Shake>
-  ));
-};
+    <GatsbyImage fluid={elt.node.childImageSharp.fluid} index={index} />
+  ))
+}
 
-export default Image;
+export default Image

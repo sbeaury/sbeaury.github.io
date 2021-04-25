@@ -1,18 +1,18 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Section from "../components/section";
-import Title from "../components/title";
-import Card from "../components/card";
-import styled from "styled-components";
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Section from "../components/Section"
+import Title from "../styles/Title"
+import Card from "../components/Card"
+import styled from "styled-components"
 
 const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:center;
-  width:80%
   justify-content: center;
-`;
+  width: 80%;
+  justify-content: center;
+`
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
@@ -32,10 +32,10 @@ const Portfolio = () => {
         }
       }
     }
-  `);
+  `)
 
   return (
-    <Section.Container id="portfolio">
+    <Section id="portfolio">
       <Title>Portfolio</Title>
       <CardContainer>
         {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -48,8 +48,8 @@ const Portfolio = () => {
           />
         ))}
       </CardContainer>
-    </Section.Container>
-  );
-};
+    </Section>
+  )
+}
 
-export default Portfolio;
+export default Portfolio

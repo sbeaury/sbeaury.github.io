@@ -14,13 +14,13 @@ const GlobalStyle = createGlobalStyle`
     font-display: swap;
     font-display: fallback;
     overflow-x: hidden;
-    font-family: Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #111;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 0 0 0 10px;
+    padding: 0;
     }
 
     a {

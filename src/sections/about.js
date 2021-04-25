@@ -7,12 +7,20 @@ import Title from "../styles/Title"
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  margin: auto;
-  max-width: 50vh;
+  margin: 0;
+  max-width: 80%;
+  cursor: pointer;
 
-  //nesting wrapper
+  // nesting wrapper
+
   .gatsby-image-wrapper {
-    width: 70px;
+    width: 3rem;
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   @media (max-width: 375px) {
@@ -30,9 +38,7 @@ const About = () => (
       <code style={{ background: "rgba(61, 192, 176, 0.5)" }}>Javascript</code>{" "}
       code.
     </p>
-    <p>
-      Technologies I'm currently using <code>||</code> exploring:
-    </p>
+    <p>Technologies I'm currently using or exploring:</p>
     <Container>
       <Image />
     </Container>

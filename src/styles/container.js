@@ -1,10 +1,4 @@
 import styled from "styled-components"
-import Headroom from "react-headroom"
-
-const HeaderContainer = styled(Headroom)`
-  position: absolute;
-  width: 100%;
-`
 
 const MenuContainer = styled.div`
   margin-right: 2rem;
@@ -12,14 +6,15 @@ const MenuContainer = styled.div`
 
 const SectionContainer = styled.div`
   min-height: 100vh;
-  min-width: 320px;
-  max-width: 1366px;
+  width: 100%;
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 5em 1em;
+  padding: 0 1em;
+  margin: 0;
   scroll-behavior: smooth;
 `
 
-export { HeaderContainer, MenuContainer, SectionContainer }
+export { MenuContainer, SectionContainer }

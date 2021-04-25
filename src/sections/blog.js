@@ -6,10 +6,11 @@ import styled from "styled-components"
 import Moment from "react-moment"
 
 const Article = styled.div`
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   text-align: left;
-  max-width: 70vh;
+  width: 80%;
 `
 
 const ArticleLink = styled.a`

@@ -1,6 +1,6 @@
 import React from "react"
 import Section from "../components/Section"
-import Image from "../components/Image"
+import TechImg from "../components/images/TechImg"
 import styled from "styled-components"
 import Title from "../styles/Title"
 
@@ -40,7 +40,7 @@ const About = () => (
     </p>
     <p>Technologies I'm currently using or exploring:</p>
     <Container>
-      <Image source="techImages" />
+      <TechImg />
     </Container>
   </Section>
 )

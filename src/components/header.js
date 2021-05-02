@@ -9,28 +9,44 @@ const StyledHeadroom = styled(Headroom)`
   width: 100%;
   height: 20px;
 
-  .headroom--unfixed {
-    background: transparent;
-  }
+  .headroom {
+    &--unfixed {
+      background: transparent;
+    }
 
-  .headroom--pinned,
-  .headroom--scrolled {
-    background: rgb(255, 255, 255);
-    box-shadow: -1px 8px 15px -2px #777777;
+    &--pinned,
+    &--scrolled {
+      background: rgb(255, 255, 255);
+      box-shadow: -1px 8px 15px -2px #777777;
+
+      span {
+        &:hover {
+          background: linear-gradient(
+            #00000000 70%,
+            rgba(61, 192, 176, 0.5) 30%
+          );
+        }
+      }
+    }
+
+    &--unpinned {
+      box-shadow: none;
+    }
+
+    &--unfixed {
+      span {
+        &:hover {
+          background: linear-gradient(#00000000 70%, rgba(151, 222, 214) 30%);
+        }
+      }
+    }
   }
 `
 
 const Header = () => (
-  <StyledHeadroom
-  // style={{
-  //   position: "absolute",
-  //   width: "100%",
-  //   background: "rgb(255, 255, 255)",
-  //   boxShadow: "1px 1px 1px rgba(0,0,0,0.25)",
-  // }}
-  >
+  <StyledHeadroom>
     <MenuContainer>
-      <MenuItem section="blog">Blog</MenuItem>
+      <MenuItem section="articles">Articles</MenuItem>
       <MenuItem section="portfolio">Portfolio</MenuItem>
       <MenuItem section="about">About</MenuItem>
     </MenuContainer>

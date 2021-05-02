@@ -4,7 +4,7 @@ import SEO from "../components/Seo"
 import Landing from "../sections/landing"
 import About from "../sections/about"
 import Portfolio from "../sections/portfolio"
-import Blog from "../sections/blog"
+import Articles from "../sections/articles"
 
 const IndexPage = () => (
   <Layout>
@@ -12,7 +12,7 @@ const IndexPage = () => (
     <Landing />
     <About />
     <Portfolio />
-    <Blog />
+    <Articles />
   </Layout>
 )
 

@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import React from "react";
-import styled from "styled-components";
-import { SectionLink } from "react-scroll-section";
+import PropTypes from "prop-types"
+import React from "react"
+import styled from "styled-components"
+import { SectionLink } from "react-scroll-section"
 
 const NavItem = styled.span`
   text-decoration: none;
@@ -10,27 +10,23 @@ const NavItem = styled.span`
   float: right;
   margin: 1rem 1rem 1rem 1rem;
   cursor: pointer;
-
-  &:hover {
-    background: linear-gradient(#00000000 70%, rgba(61, 192, 176, 0.5) 30%);
-  }
-`;
+`
 
 const MenuItem = ({ section, children }) => (
   <SectionLink section={section}>
-    {(link) => (
+    {link => (
       <NavItem onClick={link.onClick} selected={link.isSelected}>
         {children}
       </NavItem>
     )}
   </SectionLink>
-);
+)
 
 MenuItem.propTypes = {
   section: PropTypes.string,
   children: PropTypes.node.isRequired,
-};
+}
 
-export { MenuItem };
+export { MenuItem }
 
-export default styled;
+export default styled

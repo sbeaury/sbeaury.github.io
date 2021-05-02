@@ -7,15 +7,16 @@ import { FaGithub } from "react-icons/fa"
 import { FiExternalLink } from "react-icons/fi"
 
 const IconLink = styled.a`
+  display: flex;
+  align-items: center;
   transition: color 0.5s;
   text-decoration: none;
   padding: 0.5rem;
-  color:#111;
+  color: #111;
 
-  &:hover{
+  &:hover {
     transform: scale(1.02);
     color: #3dc0b0;
-  }
   }
 `
 
@@ -27,8 +28,8 @@ const SocialLink = ({ name, url, repo }) => (
       rel="noreferrer"
       aria-label={name}
     >
-      {(repo && <FaGithub size={30} />) ||
-        (url && <FiExternalLink size={30} />)}
+      {(repo && <FaGithub size={20} />) ||
+        (url && <FiExternalLink size={20} />)}
     </IconLink>
   </Tooltip>
 )

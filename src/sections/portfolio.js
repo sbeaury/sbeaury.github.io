@@ -5,12 +5,12 @@ import Title from "../styles/Title"
 import Card from "../components/Card"
 import styled from "styled-components"
 
-const CardContainer = styled.div`
+const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 80%;
+  justify-content: space-between;
+  width: 90%;
   justify-content: center;
 `
 
@@ -26,7 +26,7 @@ const Portfolio = () => {
               description
               url
               repo
-              project
+              image
             }
             excerpt
           }
@@ -38,7 +38,7 @@ const Portfolio = () => {
   return (
     <Section id="portfolio">
       <Title>Portfolio</Title>
-      <CardContainer>
+      <Container>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Card
             key={node.id}
@@ -47,9 +47,10 @@ const Portfolio = () => {
             repo={node.frontmatter.repo}
             url={node.frontmatter.url}
             tag={node.frontmatter.tag}
+            image={node.frontmatter.image}
           />
         ))}
-      </CardContainer>
+      </Container>
     </Section>
   )
 }

@@ -17,7 +17,7 @@ const ArticleLink = styled.a`
   text-decoration: none;
 `
 
-const Blog = () => {
+const Articles = () => {
   const [articles, setArticles] = useState([])
 
   useEffect(() => {
@@ -27,8 +27,8 @@ const Blog = () => {
   }, [])
 
   return (
-    <Section id="blog">
-      <Title>Blog</Title>
+    <Section id="articles">
+      <Title>Articles</Title>
       {articles.map(article => (
         <Article key={article.id}>
           <ArticleLink href={article.url} target="_blank" rel="noopener">
@@ -44,4 +44,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default Articles

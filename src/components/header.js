@@ -8,6 +8,7 @@ const StyledHeadroom = styled(Headroom)`
   position: absolute;
   width: 100%;
   height: 20px;
+  color: white;
 
   .headroom {
     &--unfixed {

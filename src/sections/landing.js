@@ -43,7 +43,7 @@ const Tagline = styled.div`
 `
 
 const Landing = () => (
-  <Section id="home">
+  <Section id="landing">
     <BackgroundImg />
     <Main>
       <Intro>Hi, I'm Sébastien</Intro>

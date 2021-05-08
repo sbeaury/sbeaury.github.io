@@ -1,7 +1,18 @@
 import React from "react"
 import styled from "styled-components"
 import ProjectLinks from "./ProjectLinks"
-import { BsChevronUp } from "react-icons/bs"
+import { FaChevronUp } from "react-icons/fa"
+import { SectionLink } from "react-scroll-section"
+
+const Arrow = styled(FaChevronUp)`
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    transform: translateY(-30%);
+  }
+`
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -20,7 +31,9 @@ const StyledFooter = styled.footer`
 
 const Footer = () => (
   <StyledFooter>
-    <BsChevronUp />
+    <SectionLink section="landing">
+      {link => <Arrow onClick={link.onClick} selected={link.isSelected} />}
+    </SectionLink>
     <ProjectLinks />
     <div>
       © {new Date().getFullYear()}, Built with&nbsp;

@@ -1,10 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Navbar from '../Navbar/Navbar'
-import Footer from '../Footer/Footer'
-import styles from '../../styles/layout.module.scss'
+import Head from "next/head"
+import Navbar from "../Navbar/Navbar"
+import Footer from "../Footer/Footer"
+import styles from "../../styles/layout.module.scss"
 
-export const siteTitle = 'Sébastien Beaury | Portfolio'
+export const siteTitle = "Sébastien Beaury | Portfolio"
 
 export default function Layout({ children }) {
   return (

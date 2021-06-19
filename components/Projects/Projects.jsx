@@ -1,9 +1,8 @@
-import Image from 'next/image'
-import { useContext } from 'react'
-import { BgProjects } from '../Background/Background'
-import utils from '../../styles/utils.module.scss'
-import projects from '../../styles/projects.module.scss'
-import PortfolioContext from '../../context'
+import { useContext } from "react"
+import { BgProjects } from "../Background/Background"
+import utils from "../../styles/utils.module.scss"
+import projects from "../../styles/projects.module.scss"
+import PortfolioContext from "../../context"
 
 const Projects = () => {
   const { projectsData } = useContext(PortfolioContext)
@@ -23,7 +22,8 @@ const Projects = () => {
                 <div
                   className={projects.top}
                   style={{
-                    backgroundImage: 'url(' + `../../static/images/${img}` + ')'
+                    backgroundImage:
+                      "url(" + `../../static/images/${img}` + ")",
                   }}
                 ></div>
                 <div className={projects.bottom} key={id}>

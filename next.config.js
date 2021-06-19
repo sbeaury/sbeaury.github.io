@@ -12,7 +12,6 @@ module.exports = withPlugins([
         strip: true,
         verbose: true,
       },
-      imagesPublicPath: "/wallisconsultancy/_next/static/images/",
     },
   ],
 ])

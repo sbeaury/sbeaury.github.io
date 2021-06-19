@@ -1,0 +1,12 @@
+.hero {
+  position: absolute;
+  height: 100vh;
+  width: 30%;
+  right: 0;
+  top: 0;
+  background-image: url(../static/images/background-hero.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}

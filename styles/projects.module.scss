@@ -1,0 +1,51 @@
+@import './_mixins.scss';
+
+.cards {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 350px;
+  gap: 20px;
+  width: 60%;
+
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 250px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(50% - 160px);
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    .top {
+      width: 100%;
+      height: 60%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 24px 24px 0 0;
+    }
+
+    .bottom {
+      padding: 20px;
+      height: 40%;
+      font-size: 16px;
+
+      @include respond(phone) {
+        font-size: 12px;
+      }
+    }
+  }
+}

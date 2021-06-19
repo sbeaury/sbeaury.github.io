@@ -1,0 +1,39 @@
+@import './_mixins.scss';
+
+.paragraph {
+  width: 70%;
+}
+
+.wrapper {
+  display: inline-flex;
+  width: 70%;
+  margin-top: 50px;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .techno {
+    padding: 0 5px;
+    -webkit-transition: color 0.25s;
+    -o-transition: color 0.25s;
+    transition: color 0.25s;
+    color: #9f9fa9;
+    cursor: pointer;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:hover {
+      color: #4c40f7;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

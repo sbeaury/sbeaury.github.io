@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import './_mixins.scss';
+
+.container {
+  position: relative;
+  font-family: Poppins;
+  padding: 0 40px;
+  margin: 40px 80px 0;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include respond(phone) {
+    padding: 0 10px;
+    margin: 20px 30px 0;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 70%;
+    right: -80px;
+    top: -40px;
+    background-image: url(../static/images/background-hero.svg);
+    background-position: right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+
+    @include respond(phone) {
+      right: -30px;
+      top: -20px;
+      width: 100%;
+    }
+  }
+}

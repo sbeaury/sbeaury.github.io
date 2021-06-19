@@ -1,0 +1,83 @@
+@import './_mixins.scss';
+
+.section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px 0;
+
+  &.hero {
+    padding-left: 300px;
+
+    @include respond(phone) {
+      padding-left: 0;
+    }
+  }
+
+  &.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.projects {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:before {
+      position: absolute;
+      height: 100%;
+      width: 100vw;
+      top: 0;
+      left: -120px;
+      content: '';
+      background: radial-gradient(
+        75.22% 75.22% at 20.49% 12.79%,
+        #ffffff 0%,
+        rgba(228, 231, 233, 0.502295) 100%
+      );
+      background-size: cover;
+      z-index: -1;
+
+      @include respond(phone) {
+        left: -40px;
+      }
+    }
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.heading2Xl {
+  display: flex;
+  flex-direction: column;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 50px 0;
+  max-width: 500px;
+
+  @include respond(phone) {
+    font-size: 40px;
+  }
+}
+
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1rem auto;
+}
+
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}

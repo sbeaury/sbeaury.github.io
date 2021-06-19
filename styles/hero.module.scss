@@ -1,0 +1,9 @@
+.subtitle {
+  margin: 2rem 0;
+  max-width: 500px;
+
+  &:after {
+    content: attr(data-end);
+    color: #4c40f7;
+  }
+}

@@ -1,5 +1,4 @@
 import { useContext } from "react"
-import { BgProjects } from "../Background/Background"
 import utils from "../../styles/utils.module.scss"
 import projects from "../../styles/projects.module.scss"
 import PortfolioContext from "../../context"
@@ -12,7 +11,6 @@ const Projects = () => {
       id="projects"
       className={`${utils.section} ${utils.projects} ${utils.headingMd}`}
     >
-      <BgProjects />
       <h2 className={utils.headingLg}>Projects</h2>
       <div className={utils.center}>
         <div className={projects.cards}>

@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
 const StyledTitle = styled.h1`
   margin-left: 0;
@@ -17,8 +17,8 @@ const StyledTitle = styled.h1`
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
-`;
+`
 
-const Title = ({ children }) => <StyledTitle>{children}</StyledTitle>;
+const Title = ({ children }) => <StyledTitle>{children}</StyledTitle>
 
-export default Title;
+export default Title

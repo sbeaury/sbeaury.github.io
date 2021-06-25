@@ -1,18 +1,9 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Section from "../components/section";
-import Title from "../components/title";
-import Card from "../components/card";
-import styled from "styled-components";
-
-const CardContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content:center;
-  width:80%
-  justify-content: center;
-`;
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Section from "../../../components/common/Section"
+import Title from "../../../components/common/Title"
+import Card from "./Card"
+import { Grid } from "./styles"
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
@@ -32,12 +23,12 @@ const Portfolio = () => {
         }
       }
     }
-  `);
+  `)
 
   return (
     <Section.Container id="portfolio">
       <Title>Portfolio</Title>
-      <CardContainer>
+      <Grid>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Card
             key={node.id}
@@ -47,9 +38,9 @@ const Portfolio = () => {
             url={node.frontmatter.url}
           />
         ))}
-      </CardContainer>
+      </Grid>
     </Section.Container>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio

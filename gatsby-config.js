@@ -43,25 +43,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-webfonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: {
-          google: [
-            {
-              family: `Bangers`,
-              variants: ["300", "400", "500"],
-              subsets: [`latin`],
-            },
-            {
-              family: `Catamaran`,
-              variants: ["300", "400", "500", "800"],
-            },
-            {
-              family: `Roboto`,
-              variants: ["300", "400", "500", "800"],
-            },
-          ],
-        },
+        fonts: [`bangers`, `catamaran\:300,400,500,800`, "roboto"],
       },
     },
 

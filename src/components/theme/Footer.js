@@ -1,13 +1,13 @@
 import React from "react"
-import { Wrapper } from "./styles"
+import { FooterContainer } from "./styles"
 
 const Footer = () => {
   return (
-    <Wrapper>
+    <FooterContainer>
       © {new Date().getFullYear()}, Built with
       {` `}
       <a href="https://www.gatsbyjs.org">Gatsby</a>
-    </Wrapper>
+    </FooterContainer>
   )
 }
 

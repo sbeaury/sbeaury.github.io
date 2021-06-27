@@ -11,13 +11,31 @@ const FooterContainer = styled.div`
 const HeaderContainer = styled.nav`
   position: absolute;
   width: 100%;
+  height: 40px;
 `
 
 const NavContainer = styled.div`
   margin-right: 2rem;
+  height: 100%;
 
   @media (max-width: 601px) {
-    display: none;
+    margin: 0;
+`
+
+const NavLinksContainer = styled.div`
+  margin-right: 2rem;
+  height: 100%;
+
+  @media (max-width: 601px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 11;
+    height: 100%;
+    width: 50%;
+    margin: 5rem auto 0 auto;
+    font-size: 18px;
   }
 `
 
@@ -34,4 +52,10 @@ const NavItem = styled.span`
   }
 `
 
-export { FooterContainer, HeaderContainer, NavContainer, NavItem }
+export {
+  FooterContainer,
+  HeaderContainer,
+  NavContainer,
+  NavLinksContainer,
+  NavItem,
+}

@@ -1,13 +1,13 @@
 import React from "react"
-import Hamburger from "./Hamburger"
+import NavLinks from "../NavLinks/NavLinks"
 import { Overlay } from "./styles"
 
-const SideBar = () => {
+const SideBar = ({ show }) => {
   return (
     <>
-      <Hamburger />
-      {/* <Overlay /> */}
-      {/* <NavLinks /> */}
+      <Overlay show={show}>
+        <NavLinks />
+      </Overlay>
     </>
   )
 }

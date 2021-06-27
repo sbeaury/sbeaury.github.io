@@ -23,6 +23,8 @@ const NavContainer = styled.div`
 `
 
 const NavLinksContainer = styled.div`
+  display: inline-flex;
+  align-items: center;
   margin-right: 2rem;
   height: 100%;
 

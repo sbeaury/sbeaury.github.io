@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
 import PropTypes from "prop-types"
-import Header from "../theme/Header"
-import Footer from "../theme/Footer"
 import { ScrollingProvider } from "react-scroll-section"
 import { createGlobalStyle } from "styled-components"
+import Header from "../theme/Header"
+import Footer from "../theme/Footer"
+import ThemeContext from "../theme/Context/ThemeContext"
 
 const GlobalStyle = createGlobalStyle`
 
@@ -27,6 +28,16 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
     text-align: center;
     background-color: #fafafa;
+
+
+
+    ${({ darkMode }) =>
+      darkMode &&
+      `
+      color: #fff;
+      background-color: #181717;
+	  `}
+
     }
 
     a {
@@ -56,9 +67,13 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Layout = ({ children }) => {
+  const {
+    theme: { darkMode },
+  } = useContext(ThemeContext)
+
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle darkMode={darkMode} />
       <ScrollingProvider>
         <Header />
         <main>{children}</main>

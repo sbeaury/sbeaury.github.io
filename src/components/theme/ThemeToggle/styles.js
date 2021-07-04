@@ -14,17 +14,18 @@ const Toggle = styled.div`
   width: 14px;
   height: 14px;
   border-radius: 100%;
-  box-shadow: 6px 6px 0 10px #f2c94c inset, 0 -10px 0 -5.4px #f2c94c,
-    7px -7px 0 -6px #f2c94c, 10px 0 0 -5.4px #f2c94c, 7px 7px 0 -6px #f2c94c,
-    0 10px 0 -5.4px #f2c94c, -7px 7px 0 -6px #f2c94c, -10px 0 0 -5.4px #f2c94c,
-    -7px -7px 0 -6px #f2c94c;
-  transition: box-shadow 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform: rotate(-75deg);
+  box-shadow: 5px 3.75px 0 0 #d9fbff inset;
 
   ${({ darkMode }) =>
     darkMode &&
     `
-    transform: rotate(-75deg);
-    box-shadow: 5px 3.75px 0 0 #d9fbff inset;
+    transform: rotate(0deg);
+    box-shadow: 6px 6px 0 10px #f2c94c inset, 0 -10px 0 -5.4px #f2c94c,
+    7px -7px 0 -6px #f2c94c, 10px 0 0 -5.4px #f2c94c, 7px 7px 0 -6px #f2c94c,
+    0 10px 0 -5.4px #f2c94c, -7px 7px 0 -6px #f2c94c, -10px 0 0 -5.4px #f2c94c,
+    -7px -7px 0 -6px #f2c94c;
+    transition: box-shadow 400ms cubic-bezier(0.23, 1, 0.32, 1);
 	  `}
 `
 

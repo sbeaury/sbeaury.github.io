@@ -3,10 +3,14 @@ import React from "react"
 import { SectionLink } from "react-scroll-section"
 import { NavItem } from "../styles"
 
-const NavLink = ({ section, children }) => (
+const NavLink = ({ section, children, darkMode }) => (
   <SectionLink section={section}>
     {link => (
-      <NavItem onClick={link.onClick} selected={link.isSelected}>
+      <NavItem
+        onClick={link.onClick}
+        selected={link.isSelected}
+        darkMode={darkMode}
+      >
         {children}
       </NavItem>
     )}

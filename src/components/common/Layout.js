@@ -41,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a {
-      color:#111;
+      color: ${({ darkMode }) => (darkMode ? "#fff" : "#111")};
     }
     
     @media (min-width: 768px) {

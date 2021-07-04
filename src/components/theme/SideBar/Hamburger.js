@@ -1,7 +1,12 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useContext } from "react"
 import { Wrapper, Bar } from "./styles"
+import ThemeContext from "../Context/ThemeContext"
 
 const Hamburger = ({ onClick }) => {
+  const {
+    theme: { darkMode },
+  } = useContext(ThemeContext)
+
   const [showSidebar, setShowsidebar] = useState(false)
 
   const toggleSidebar = () => {
@@ -14,9 +19,9 @@ const Hamburger = ({ onClick }) => {
 
   return (
     <Wrapper onClick={toggleSidebar}>
-      <Bar top show={showSidebar} />
-      <Bar mid show={showSidebar} />
-      <Bar bottom show={showSidebar} />
+      <Bar top show={showSidebar} darkMode={darkMode} />
+      <Bar mid show={showSidebar} darkMode={darkMode} />
+      <Bar bottom show={showSidebar} darkMode={darkMode} />
     </Wrapper>
   )
 }

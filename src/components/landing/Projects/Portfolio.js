@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Section from "../../../components/common/Section"
 import Title from "../../../components/common/Title"
 import Card from "./Card"
 import { Grid } from "./styles"
+import ThemeContext from "../../theme/Context/ThemeContext"
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
@@ -25,6 +26,10 @@ const Portfolio = () => {
     }
   `)
 
+  const {
+    theme: { darkMode },
+  } = useContext(ThemeContext)
+
   return (
     <Section.Container id="portfolio">
       <Title>Portfolio</Title>
@@ -36,6 +41,7 @@ const Portfolio = () => {
             description={node.frontmatter.description}
             repo={node.frontmatter.repo}
             url={node.frontmatter.url}
+            darkMode={darkMode}
           />
         ))}
       </Grid>

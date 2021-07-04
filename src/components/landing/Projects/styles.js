@@ -31,6 +31,7 @@ const CardItem = styled.div`
   border-radius: 4px;
   font-size: 14px;
   padding: 1rem;
+  background-color: ${({ darkMode }) => (darkMode ? "#fff" : "transparent")};
 
   @media (max-width: 601px) {
     font-size: 16px;
@@ -40,6 +41,7 @@ const CardItem = styled.div`
 const Content = styled.div`
   padding: 1rem 0;
   min-height: 160px;
+  color: ${({ darkMode }) => (darkMode ? "#fff" : "#111")};
 `
 
 const LinkWrapper = styled.div`

@@ -19,7 +19,8 @@ const Bar = styled.li`
   position: absolute;
   width: 100%;
   height: 5px;
-  background-color: #080808;
+  background-color: ${({ darkMode, show }) =>
+    darkMode && show ? "#080808" : darkMode && !show ? "#fff" : "#080808"};
   transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 
   top: ${props => (props.top ? 0 : props.bottom ? "100%" : "50%")};

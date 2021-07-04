@@ -30,8 +30,8 @@ const NavLinksContainer = styled.div`
 
   @media (max-width: 601px) {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     z-index: 11;
     height: 100%;
@@ -48,6 +48,7 @@ const NavItem = styled.span`
   float: right;
   margin: 1rem 1rem 1rem 1rem;
   cursor: pointer;
+  color: ${({ darkMode }) => (darkMode ? "#fff" : "#111")};
 
   &:hover {
     background: linear-gradient(#00000000 70%, rgba(61, 192, 176, 0.5) 30%);
